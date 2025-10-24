@@ -1,0 +1,123 @@
+/* General Body Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 40px;
+}
+
+/* Theme button style */
+.theme-black {
+  background-color: rgb(52, 52, 52);
+  color: white;
+}
+#Theme {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+/* Container of form and display box */
+.container {
+  display: flex;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 40px 80px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels and Inputs */
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 4px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Input Focus */
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Checkbox Group */
+input[type="checkbox"] {
+  margin-right: 8px;
+  margin-top: 10px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: #4a90e2;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #5eadfc;
+}
+
+/* Validation Messages */
+span {
+  font-size: 14px;
+  color: red;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Display Box Styling */
+#displayBox {
+  max-width: 500px;
+  margin: 30px auto 0;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Checkbox Labels Inline */
+label[for="hobbies"] {
+  margin-bottom: 5px;
+  font-weight: 600;
+}

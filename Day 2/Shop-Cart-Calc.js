@@ -39,8 +39,7 @@ async function addToCart(productId) {
   if (cartItem) {
     cartItem.quantity += 1;
     totalPrice += product.price;
-  }
-  else {
+  } else {
     product.quantity = 1;
     cart.push(product);
     totalPrice += product.price;
@@ -63,7 +62,7 @@ async function CartList(cartlistid) {
 }
 
 //total of the cart products
-async function getTotal(){
+async function getTotal() {
   let itemDiscount = 0;
   let priceDiscount = 0;
   let newPrice = totalPrice;
@@ -79,7 +78,7 @@ async function getTotal(){
   cart_total.innerText = `Total : $${totalPrice.toFixed(2)}`;
   priceDiscount_div.innerText = `Price Discount : $${priceDiscount.toFixed(2)}`;
   itemDiscount_div.innerText = `Item Discount : $${itemDiscount.toFixed(2)}`;
-  newPrice_div.innerText = `New Price : $${newPrice.toFixed(2)}`;  
+  newPrice_div.innerText = `New Price : $${newPrice.toFixed(2)}`;
 }
 
 //10% discount above the 10 items and 5% discount above 500 total

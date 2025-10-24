@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Form</title>
+    <link rel="stylesheet" href="formstyle.css" />
+  </head>
+  <body>
+    <button id="Theme" onclick="toggleTheme()"></button>
+
+    <!-- form which accepts user inputs name, email, age, date of birth, gender, hobbies and country. -->
+    <h1>Dynamic Form</h1>
+    <div class="container">
+      <form id="dynamicForm">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+        />
+        <span id="nameValidation"></span><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Enter your email address"
+        />
+        <span id="emailValidation"></span><br />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" />
+        <span id="ageValidation"></span><br /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" />
+        <span id="dobValidation"></span><br /><br />
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+        <input type="radio" name="gender" value="other" /> Other
+        <span id="genderValidation"></span><br /><br />
+
+        <label for="hobbies">Hobbies:</label><br />
+        <input type="checkbox" name="hobbies" value="Reading" /> Reading
+        <input type="checkbox" name="hobbies" value="Traveling" /> Traveling
+        <input type="checkbox" name="hobbies" value="Sports" /> Sports
+        <input type="checkbox" name="hobbies" value="Gaming" /> Gaming
+        <input type="checkbox" name="hobbies" value="Music" /> Music
+        <br />
+        <span id="hobbiesValidation"></span><br /><br />
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="">-- Select Country --</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Canada">Canada</option>
+          <option value="Australia">Australia</option>
+        </select>
+        <span id="countryValidation"></span><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+
+      <div id="displayBox"></div>
+    </div>
+    <script src="formhandle.js"></script>
+  </body>
+</html>
